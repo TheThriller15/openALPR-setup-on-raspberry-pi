@@ -28,7 +28,7 @@
 	sudo apt-get install zlib1g-dev
 	sudo apt-get install git-core
 	sudo apt-get install cmake
-	sudo apt-get install libcurl4-openssl-dev liblog4cplus-1.0-4 liblog4cplus-dev uuid-dev
+	sudo apt-get install libcurl4-openssl-dev liblog4cplus-1.1-9 liblog4cplus-dev uuid-dev
 	sudo apt-get install libjasper-dev 
 	sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 	sudo apt-get install libatlas-base-dev gfortran
@@ -46,17 +46,17 @@
 	(this is the tesseract laguage library)
 	sudo wget https://github.com/Itseez/opencv/archive/master.zip
 	(opencv library)
-	sudo wget http://www.leptonica.com/source/leptonica-1.73.tar.gz
+	sudo wget -O leptonica-1.78.0.tar.gz http://www.leptonica.org/source/leptonica-1.78.0.tar.gz
 	(leptonica library)
 ---
 ## now unzip all master.zip files:
 	sudo unzip master.zip
 	sudo unzip master.zip.1
 	sudo unzip master.zip.2
-	sudo tar –xvf leptonica-1.73.tar.gz
+	sudo tar xf leptonica-1.78.0.tar.gz
 ---
 ## compile leptonica:
-	cd leptonica-1.73
+	cd leptonica-1.78.0
 	sudo ./configure
 	sudo make
 	sudo make install
